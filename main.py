@@ -2,8 +2,15 @@ import streamlit as st
 import pandas as pd
 
 def main():
-    st.title('🥦 Gerador de Tabela Nutricional 🍝')
-    st.header('🥦 Gerador de Tabela Nutricional 🍝')
+    st.set_page_config(
+        page_title="🥦 Gerador de Tabela Nutricional 🍝'",
+        page_icon="🥦",
+        initial_sidebar_state="auto",
+        menu_items={
+            'About': "ADS Unip - 2024"
+            }
+        )
+    st.header(' Gerador de Tabela Nutricional 🍝')
     left, middle = st.columns(2, vertical_alignment="center")
     left.subheader("Projeto de Extensão")
     middle.subheader('ADS Unip 2024')
